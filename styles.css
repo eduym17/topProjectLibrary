@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  --color-blue: #251791;
+  --color-darkgray: #111123;
+  --color-white: #FFFFFF;
+  --color-darkgrad: linear-gradient(90deg, var(--color-blue), var(--color-darkgray));
+  --color-aqua: #33FDD8;
+  --color-violet: #7A4AFF;
+  --color-purple: #45108A;
+  --color-brightgrad: linear-gradient(90deg, var(--color-aqua), var(--color-violet), var(--color-purple));
+  --color-gray100: #E7E7E9;
+  --color-gray200: #CFCFD3;
+  --color-gray300: #9F9FA7;
+  --color-gray400: #888891;
+  --color-gray500: #70707B;
+  --color-gray600: #585865;
+  --color-gray700: #40404E;
+  --color-gray800: #282838;
+}
+
+body {
+  background: var(--color-darkgrad);
+  color: var(--color-gray200);
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  font-family: 'Lato', sans-serif;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+}
+
+.inputs > label {
+  width: 25%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: var(--color-gray300);
+}
+
+.inputs > input {
+  width: 75%;
+  padding: 6px 10px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+}
+
+.inputs > input:hover, .inputs > input:focus {
+  border: 2px solid var(--color-violet);
+  background-color: var(--color-aqua);
+}
+
+#checkbox {
+  justify-self: flex-start;
+  height: 16px;
+  width: 16px;
+}
+
+.submit-btn {
+  width: 100px;
+  align-self: flex-end;
+  width: 25%;
+  max-width: 150px;
+  padding: 8px 0;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  color: var(--color-blue);
+}
+
+.submit-btn:hover {
+  background: var(--color-aqua);
+  color: var(--color-darkgray);
+  font-weight: 600;
+}

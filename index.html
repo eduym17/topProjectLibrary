@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,39 @@
 </head>
 <body>
   <header>
-
+    <div class="navbar">
+      <div class="logo">
+        <img src="./assets/icons/h-white-gradient.png" alt="ASTEROIDEV" class="logo">
+      </div>
+      <p>&copy; Eduardo Yañez</p>
+    </div>
   </header>
   <main>
-
-
+    <form method="POST" action="/" class="form">
+      <div class="form-group">
+        <div class="inputs">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" class="form-control" placeholder="Insert title here">
+        </div>
+        <div class="inputs">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" class="form-control" placeholder="Insert author here">
+        </div>
+        <div class="inputs">
+          <label for="pages">Pages</label>
+          <input type="text" name="pages" id="pages" class="form-control" placeholder="Insert number of pages here">
+        </div>
+        <div class="inputs">
+          <label for="checkbox">Have you read it?</label>
+          <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+        </div>
+        <button type="submit" class="submit-btn">Send</button>
+        </div>
+      </div>
+    </form>
   </main>
   <footer>
-
+    c
   </footer>
   <script src="./index.js"></script>
 </body>
