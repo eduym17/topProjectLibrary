@@ -14,35 +14,38 @@
       <div class="logo">
         <img src="./assets/icons/h-white-gradient.png" alt="ASTEROIDEV" class="logo">
       </div>
-      <p>&copy; Eduardo Yañez</p>
+      <p>&copy; Eduardo Yañez, 2022</p>
     </div>
   </header>
   <main>
-    <form method="POST" action="/" class="form">
+    <form method="POST" class="form" id="form">
       <div class="form-group">
         <div class="inputs">
           <label for="title">Title</label>
-          <input type="text" name="title" id="title" class="form-control" placeholder="Insert title here">
+          <input type="text" name="title" id="title" class="form-control" placeholder="Insert title here" required>
         </div>
         <div class="inputs">
           <label for="author">Author</label>
-          <input type="text" name="author" id="author" class="form-control" placeholder="Insert author here">
+          <input type="text" name="author" id="author" class="form-control" placeholder="Insert author here" required>
         </div>
         <div class="inputs">
           <label for="pages">Pages</label>
-          <input type="text" name="pages" id="pages" class="form-control" placeholder="Insert number of pages here">
+          <input type="text" name="pages" id="pages" class="form-control" placeholder="Insert number of pages here" required>
         </div>
         <div class="inputs">
           <label for="checkbox">Have you read it?</label>
           <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
         </div>
-        <button type="submit" class="submit-btn">Send</button>
+        <button type="submit" class="submit-btn">Add</button>
         </div>
       </div>
     </form>
+    <ul id="bookshelf">
+      Libros
+    </ul>
   </main>
   <footer>
-    c
+    Footer
   </footer>
   <script src="./index.js"></script>
 </body>
