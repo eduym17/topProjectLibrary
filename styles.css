@@ -42,12 +42,16 @@ header {
 
 main {
   font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+
 .form {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .form-group {
@@ -108,7 +112,50 @@ main {
   font-weight: 600;
 }
 
+#bookshelf {
+  justify-self: center;
+  align-self: center;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 25px 0px;
+}
+
+.bookitem {
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: var(--color-darkgray);
+  font-weight: 500;
+}
+
+.bookitem:hover {
+  background: var(--color-brightgrad);
+}
+
+.deletebutton {
+ background: var(--color-darkgrad);
+ color: var(--color-white);
+ font-weight: 300;
+ border: none;
+ border-radius: 10px;
+ align-self: flex-end;
+ padding: 3px 10px;
+ cursor: pointer;
+}
+
+.deletebutton:hover {
+  background: red;
+  font-weight: 600;
+}
+
 .checked {
-  color: red;
+  color: var(--color-blue);
   opacity: .5;
 }

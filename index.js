@@ -70,7 +70,7 @@ function displayBooks(){
 
     const deleteButton = document.createElement('button');
     deleteButton.classList.add('deletebutton');
-    deleteButton.innerText = 'X';
+    deleteButton.innerText = 'Remove';
     deleteButton.addEventListener('click', () => {
       books.splice(index, 1);
       saveOnLocalStorage();
